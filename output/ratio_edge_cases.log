@@ -1,0 +1,81 @@
+FINANCIAL RATIO EDGE CASE REVIEW
+
+Date: 04-07-2026
+
+Reviewed Items
+
+1. Negative Equity
+Status:
+Handled by returning None for ROE.
+
+Category:
+Formula Edge Case
+
+------------------------------------------------
+
+2. Zero Sales
+Status:
+Handled by returning None for Net Profit Margin.
+
+Category:
+Formula Edge Case
+
+------------------------------------------------
+
+3. Debt-Free Companies
+Status:
+Debt to Equity = 0
+Interest Coverage = None
+Label = Debt Free
+
+Category:
+Business Rule
+
+------------------------------------------------
+
+4. CAGR Zero Base
+Status:
+Flag = ZERO_BASE
+
+Category:
+Formula Edge Case
+
+------------------------------------------------
+
+5. CAGR Turnaround
+Status:
+Flag = TURNAROUND
+
+Category:
+Business Rule
+
+------------------------------------------------
+
+6. Financial Sector High Leverage
+Status:
+High leverage warning suppressed.
+
+Category:
+Sector Carve-out
+
+------------------------------------------------
+
+7. ROCE Comparison
+Status:
+No significant anomalies detected.
+
+Category:
+Data Validation
+
+------------------------------------------------
+
+8. ROE Comparison
+Status:
+Analytics value retained where source appeared inconsistent.
+
+Category:
+Data Source Difference
+
+------------------------------------------------
+
+Review Completed Successfully.

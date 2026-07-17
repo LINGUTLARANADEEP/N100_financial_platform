@@ -1,0 +1,3 @@
+company_id,year,sales,return_on_equity_pct,debt_to_equity,free_cash_flow_cr,revenue_cagr_5yr,pat_cagr_5yr,operating_profit_margin_pct,interest_coverage,asset_turnover,dividend_payout_ratio_pct,composite_quality_score,broad_sector,sub_sector
+LICI,Mar 2024,845966,49.44710986501021,0.0,853.0,0,0,3.87474201090824,371.9375,0.1591344094587576,15.0,0,Financials,Life Insurance
+SBILIFE,Mar 2024,131988,12.704588140595655,0.0,-2099.0,0,0,0.186380580052732,240.33333333333331,0.3313791900054983,14.0,0,Financials,Life Insurance

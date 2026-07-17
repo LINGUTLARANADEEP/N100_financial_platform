@@ -1,0 +1,95 @@
+id,company_name,website,face_value,book_value,roce_percentage,roe_percentage
+ABB,Abbott India Ltd,https://www.abbott.co.in/,10.0,1657.0,46.0,34.9
+ADANIENSOL,Adani Energy Solutions Ltd,https://www.adanienergysolutions.com/,10.0,175.0,9.0,8.59
+ADANIENT,Adani Enterprises Ltd,https://www.adanienterprises.com/,1.0,363.0,11.6,13.64
+ADANIGREEN,Adani Green Energy Ltd,http://www.adanigreenenergy.com/,10.0,67.0,96.5,14.7
+ADANIPORTS,Adani Ports & Special Economic Zone Ltd,http://www.adaniports.com/,2.0,265.0,12.9,18.1
+ADANIPOWER,Adani Power Ltd,http://www.adani.com/,10.0,145.0,32.2,57.1
+AMBUJACEM,Ambuja Cements Ltd,https://www.ambujacement.com/,2.0,205.0,12.8,9.24
+APOLLOHOSP,"Apollo Hospitals
+Chain of Indian private hospitals",https://www.apollohospitals.com/,5.0,522.0,17.2,13.81
+ASIANPAINT,"Asian Paints
+Indian Multi-National Paint and Coating Manufacturing Company",https://www.asianpaints.com/,1.0,188.0,41.75,31.45
+ATGL,Adani Total Gas Ltd,http://www.adanigas.com/,1.0,36.0,21.2,20.5
+AXISBANK,Axis Bank Ltd,http://www.axisbank.com/,2.0,509.0,7.06,18.4
+BAJAJ-AUTO,Bajaj Auto Ltd,https://www.bajajauto.com/,10.0,1109.0,33.5,26.5
+BAJAJFINSV,Bajaj Finserv Ltd,https://www.bajajfinserv.in/,1.0,428.0,21.14,11.72
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd,https://www.bhil.in/,10.0,5375.0,13.1,14.8
+BAJFINANCE,Bajaj Finance Ltd,https://www.bajajfinserv.in/,2.0,1402.0,11.9,22.1
+BANKBARODA,Bank of Baroda,http://www.bankofbaroda.co.in/,2.0,231.0,6.33,16.7
+BEL,Bharat Electronics Ltd,http://www.bel-india.in/,1.0,24.0,34.6,26.3
+BHARTIARTL,Bharti Airtel Ltd,http://www.airtel.in/,5.0,153.0,13.1,14.9
+BHEL,Bharat Heavy Electricals Limited,https://www.bhel.com/,2.0,70.0,3.28,1.05
+BOSCHLTD,Bosch Ltd,https://www.bosch.in/,10.0,4319.0,20.6,16.0
+BPCL,Bharat Petroleum Corporation Ltd,https://www.bharatpetroleum.in/,10.0,178.0,32.1,41.9
+BRITANNIA,Britannia Industries Ltd,https://www.britannia.co.in/,1.0,133.0,48.9,57.1
+CANBK,Canara Bank,http://www.canarabank.com/,2.0,102.0,6.63,17.9
+CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,https://www.cholamandalam.com/,2.0,255.0,10.4,20.2
+CIPLA,Cipla Ltd,https://www.cipla.com/,2.0,351.0,22.8,16.8
+COALINDIA,Coal India Ltd,http://www.coalindia.in/,10.0,156.0,63.6,52.0
+DABUR,Dabur India Ltd,http://www.dabur.com/,1.0,59.0,22.3,19.2
+DIVISLAB,Divis Laboratories Ltd,https://www.divislaboratories.com/lander,2.0,517.0,16.5,12.2
+DLF,DLF Ltd,https://www.dlf.in/,2.0,163.0,5.74,6.95
+DMART,Avenue Supermarts Ltd,http://www.dmartindia.com/,10.0,309.0,19.4,14.5
+DRREDDY,Dr Reddys Laboratories Ltd,https://www.drreddys.com/,1.0,369.0,26.5,21.4
+EICHERMOT,Eicher Motors Ltd,https://www.eicher.in/,1.0,693.0,31.1,24.2
+GAIL,GAIL (India) Ltd,https://gailonline.com/,10.0,127.0,14.7,14.0
+GODREJCP,Godrej Consumer Products Ltd,https://www.godrejcp.com/,1.0,119.0,26.49,6.77
+GRASIM,Grasim Industries Ltd,https://www.grasim.com/,2.0,1411.0,9.3,6.9
+HAL,Hindustan Aeronautics Ltd,https://hal-india.co.in/,5.0,465.0,38.9,28.9
+HAVELLS,Havells India Ltd,https://havells.com/,1.0,124.0,24.4,18.0
+HCLTECH,HCL Technologies Ltd,https://www.hcltech.com/,2.0,254.0,29.6,23.3
+HDFCBANK,HDFC Bank Ltd,http://www.hdfcbank.com/,1.0,601.0,7.67,17.1
+HDFCLIFE,HDFC Life Insurance Company Ltd,http://www.hdfclife.com/,10.0,73.0,6.61,11.4
+HEROMOTOCO,Hero MotoCorp Ltd,http://www.heromotocorp.com/,2.0,951.0,29.1,22.0
+HINDALCO,Hindalco Industries Ltd,http://www.hindalco.com/,1.0,153.0,11.3,10.2
+HINDUNILVR,Hindustan Unilever Ltd,http://www.hul.co.in/,1.0,216.0,27.2,20.2
+ICICIBANK,ICICI Bank Ltd,http://www.icicibank.com/,2.0,365.0,7.6,18.8
+ICICIGI,ICICI Lombard General Insurance Company Ltd,http://www.icicilombard.com/,10.0,275.0,22.5,17.0
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd,https://www.iciciprulife.com/,10.0,80.0,8.75,8.07
+INDIGO,Interglobe Aviation Ltd,http://www.goindigo.in/,10.0,97.0,24.5,0.0
+INDUSINDBK,IndusInd Bank Ltd,https://www.indusind.com/in/en/personal.html,10.0,807.0,7.93,15.2
+INFY,Infosys Ltd,http://www.infosys.com/,5.0,218.0,40.0,31.8
+IOC,Indian Oil Corporation,https://www.iocl.com/,10.0,129.0,21.31,25.44
+IRCTC,Indian Railway Catering & Tourism Corporation Ltd,http://www.irctc.com/,2.0,44.0,53.8,40.4
+IRFC,Indian Railway Finance Corporation Ltd,https://irfc.co.in/,10.0,39.0,5.73,13.7
+ITC,ITC Ltd,https://www.itcportal.com/,1.0,60.0,34.76,29.47
+JINDALSTEL,Jindal Steel & Power Ltd,http://www.jindalsteelpower.com/,1.0,464.0,13.2,14.1
+JIOFIN,Jio Financial Services Ltd,https://www.jfs.in/,10.0,216.0,2.16,1.82
+JSWENERGY,JSW Energy Ltd,https://www.jsw.in/,10.0,160.0,8.59,8.4
+JSWSTEEL,JSW Steel Ltd,https://www.jswsteel.in/,1.0,326.0,13.36,11.66
+KOTAKBANK,Kotak Mahindra Bank Ltd,https://www.kotak.com/en/home.html,5.0,654.0,7.86,15.1
+LICI,Life Insurance Corporation of India,https://www.licindia.in/,10.0,154.0,63.79,63.61
+LODHA,Macrotech Developers Ltd,https://www.lodhagroup.com/,10.0,183.0,11.1,10.7
+LT,Larsen & Toubro Ltd,https://www.larsentoubro.com/,2.0,635.0,17.18,10.49
+LTIM,LTIMindtree Ltd,https://www.ltimindtree.com/,1.0,711.0,34.1,26.04
+M&M,Mahindra & Mahindra Ltd,https://auto.mahindra.com/,5.0,567.0,26.98,17.99
+MARUTI,Maruti Suzuki India Ltd,https://www.marutisuzuki.com/,5.0,2835.0,23.67,15.75
+MOTHERSON,Samvardhana Motherson International Ltd,http://www.motherson.com/,1.0,46.0,13.7,11.8
+NAUKRI,Info Edge (India) Ltd,http://www.infoedge.in/,10.0,3225.0,3.65,2.44
+NESTLEIND,Nestle India Ltd,https://www.nestle.in/,1.0,41.0,185.43,135.61
+NHPC,NHPC Ltd,http://www.nhpcindia.com/,10.0,40.0,7.67,9.61
+NTPC,NTPC Ltd,https://ntpc.co.in/,10.0,174.0,10.58,12.52
+ONGC,Oil & Natural Gas Corpn Ltd,https://www.ongcindia.com/,5.0,275.0,19.71,14.32
+PFC,Power Finance Corporation Ltd,https://www.pfcindia.com/,10.0,333.0,9.96,19.49
+PIDILITIND,Pidilite Industries Ltd,http://www.pidilite.com/,1.0,171.0,29.7,22.8
+PNB,Punjab National Bank,https://www.pnbindia.in/,2.0,110.0,1.63,8.7
+POWERGRID,Power Grid Corporation of India Ltd,https://www.powergrid.in/,10.0,99.0,13.2,19.0
+RECLTD,REC Ltd,https://recindia.nic.in/,10.0,279.0,10.0,22.2
+RELIANCE,Reliance Industries Ltd,https://www.ril.com/,10.0,606.0,9.61,9.25
+SBILIFE,SBI Life Insurance Company Ltd,https://www.sbilife.co.in/,10.0,162.0,13.2,12.0
+SBIN,State Bank of India,https://sbi.co.in/,1.0,465.0,6.16,17.3
+SHREECEM,Shree Cement Ltd,https://www.shreecement.com/,10.0,5787.0,14.8,12.2
+SHRIRAMFIN,Shriram Finance Ltd,https://www.shriramfinance.in/,2.0,279.0,11.3,15.9
+SIEMENS,Siemens Ltd,https://www.siemens.com/in/en.html,2.0,431.0,25.6,19.1
+SUNPHARMA,Sun Pharmaceuticals Industries Ltd,https://sunpharma.com/,1.0,288.0,17.3,16.7
+TATACONSUM,Tata Consumer Products Ltd,https://www.tataconsumer.com/,1.0,193.0,10.6,8.32
+TATAMOTORS,Tata Motors Ltd,https://www.tatamotors.com/,2.0,275.0,20.1,49.4
+TATAPOWER,Tata Power Company Ltd,https://www.tatapower.com/,1.0,105.0,11.1,11.3
+TATASTEEL,Tata Steel Ltd,https://www.tatasteel.com/,1.0,72.0,7.02,6.55
+TCS,Tata Consultancy Services Ltd,https://www.tcs.com/,1.0,281.0,64.3,0.52
+TECHM,Tech Mahindra Ltd,https://www.techmahindra.com/,5.0,270.0,11.9,8.63
+TITAN,Titan Company Ltd,https://www.titancompany.in/,1.0,110.0,22.7,32.9
+TORNTPHARM,Torrent Pharmaceuticals Ltd,https://www.torrentpharma.com/,5.0,222.0,23.2,24.2
+TRENT,Trent Ltd,https://trentlimited.com/,1.0,132.0,23.8,27.2
+TVSMOTOR,TVS Motor Company Ltd,Not Available,0.0,0.0,0.0,0.0
