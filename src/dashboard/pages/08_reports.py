@@ -119,8 +119,6 @@ st.subheader("🏢 Company Overview")
 
 st.info(f"""
 **Company:** {info['company_name']}
-
-**Website:** {info['website']}
 """)
 
 st.subheader("📈 Financial Snapshot")
@@ -174,13 +172,13 @@ st.link_button(
 
 st.divider()
 
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📊 Financial Statements",
     "📈 Charts",
     "🏆 Analysis",
-    "🏢 Company Info"
+    "🏢 Company Info",
+    "💰 Valuation"
 ])
-
 # ======================================================
 # TAB 1 : FINANCIAL STATEMENTS
 # ======================================================
@@ -608,3 +606,131 @@ with tab4:
         use_container_width=True,
         hide_index=True
     ) 
+ 
+# ======================================================
+# TAB 5 : VALUATION
+# ======================================================
+
+with tab5:
+
+    st.subheader("💰 Valuation Analysis")
+
+    valuation_df = pd.read_csv(
+        "output/valuation_summary.csv"
+    )
+
+    company_valuation = valuation_df[
+        valuation_df["company_id"] == selected_company
+    ]
+
+    if company_valuation.empty:
+
+        st.warning(
+            "No valuation data available for this company."
+        )
+
+    else:
+
+        latest_val = company_valuation.iloc[-1]
+
+
+        col1, col2, col3 = st.columns(3)
+
+
+        with col1:
+            st.metric(
+                "Valuation Status",
+                latest_val["valuation_status"]
+            )
+
+
+        with col2:
+            st.metric(
+                "Investment Rating",
+                latest_val["investment_rating"]
+            )
+
+
+        with col3:
+            st.metric(
+                "Valuation Score",
+                latest_val["valuation_score"]
+            )
+
+
+        st.divider()
+
+
+        st.subheader("📊 Valuation Metrics")
+
+
+        metrics = pd.DataFrame({
+
+            "Metric": [
+                "P/E Ratio",
+                "Sector Median PE",
+                "FCF Yield %",
+                "PB Ratio",
+                "EV/EBITDA"
+            ],
+
+            "Value": [
+
+                latest_val["pe_ratio"],
+
+                latest_val["sector_median_pe"],
+
+                latest_val["fcf_yield_pct"],
+
+                latest_val["pb_ratio"],
+
+                latest_val["ev_ebitda"]
+
+            ]
+
+        })
+
+
+        st.dataframe(
+            metrics,
+            hide_index=True,
+            use_container_width=True
+        )
+
+
+        st.divider()
+
+
+        st.subheader("📈 PE Comparison")
+
+
+        pe_df = pd.DataFrame({
+
+            "Category": [
+                "Company PE",
+                "Sector Median PE"
+            ],
+
+            "PE": [
+
+                latest_val["pe_ratio"],
+
+                latest_val["sector_median_pe"]
+
+            ]
+
+        })
+
+
+        fig = px.bar(
+            pe_df,
+            x="Category",
+            y="PE",
+            title="Company PE vs Sector Median PE"
+        )
+
+
+        st.plotly_chart(
+            fig,
+            use_container_width=True
+        )    

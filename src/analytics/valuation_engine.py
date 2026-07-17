@@ -230,14 +230,14 @@ def valuation_label(row):
     if pd.isna(pe) or pd.isna(median):
         return "Unknown"
 
-    if pe < median * 0.8:
-        return "Undervalued"
+    if pe < median * 0.7:
+     return "Discount"
 
-    elif pe > median * 1.2:
-        return "Overvalued"
+    elif pe > median * 1.5:
+     return "Caution"
 
     else:
-        return "Fairly Valued"
+     return "Fair"
 
 
 valuation_df["valuation_status"] = valuation_df.apply(
@@ -269,12 +269,12 @@ valuation_df["valuation_score"] = 0
 
 # PE Score (40 Marks)
 valuation_df.loc[
-    valuation_df["valuation_status"] == "Undervalued",
+    valuation_df["valuation_status"] == "Discount",
     "valuation_score"
 ] += 40
 
 valuation_df.loc[
-    valuation_df["valuation_status"] == "Fairly Valued",
+    valuation_df["valuation_status"] == "Fair",
     "valuation_score"
 ] += 20
 
@@ -355,12 +355,31 @@ valuation_df.to_csv(
     index=False
 )
 
+
+valuation_df.to_excel(
+    "output/valuation_summary.xlsx",
+    index=False
+)
+
+flags = valuation_df[
+    valuation_df["valuation_status"].isin(
+        ["Caution","Discount"]
+    )
+]
+
+flags.to_csv(
+    "output/valuation_flags.csv",
+    index=False
+)
+
 print("=" * 50)
 print("Valuation Summary Saved Successfully")
 print("=" * 50)
 
 print("File Saved:")
 print("output/valuation_summary.csv")
+print("output/valuation_summary.xlsx")
+print("output/valuation_flags.csv")
 print("\nMarket Years")
 print(sorted(market_df["year"].unique())[:10])
 
