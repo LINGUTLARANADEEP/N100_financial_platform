@@ -1,0 +1,283 @@
+company_id,type,rule_id,text,confidence_pct
+VBL,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+VBL,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+ABB,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+ABB,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ADANIENSOL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ADANIENSOL,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ADANIENSOL,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+ADANIENSOL,con,CON_3,Low return on equity suggests weak capital efficiency,70
+ADANIENT,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+ADANIENT,con,CON_3,Low return on equity suggests weak capital efficiency,70
+ADANIENT,con,CON_5,Low revenue growth indicates limited business momentum,70
+ADANIGREEN,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+ADANIGREEN,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ADANIGREEN,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+ADANIGREEN,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+ADANIPORTS,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ADANIPORTS,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+ADANIPORTS,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ADANIPOWER,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+ADANIPOWER,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ADANIPOWER,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+ADANIPOWER,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+AMBUJACEM,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+AMBUJACEM,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+APOLLOHOSP,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+APOLLOHOSP,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+ASIANPAINT,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+ASIANPAINT,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ATGL,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+AXISBANK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+AXISBANK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+AXISBANK,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BAJAJ-AUTO,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BAJAJ-AUTO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+BAJAJ-AUTO,con,CON_5,Low revenue growth indicates limited business momentum,70
+BAJAJFINSV,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BAJAJFINSV,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+BAJAJFINSV,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+BAJAJFINSV,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+BAJAJFINSV,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BAJAJHLDNG,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+BAJAJHLDNG,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+BAJAJHLDNG,con,CON_5,Low revenue growth indicates limited business momentum,70
+BAJFINANCE,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+BAJFINANCE,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+BAJFINANCE,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+BAJFINANCE,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BANKBARODA,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+BANKBARODA,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+BANKBARODA,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BANKBARODA,con,CON_5,Low revenue growth indicates limited business momentum,70
+BEL,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BEL,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BHARTIARTL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+BHARTIARTL,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+BHARTIARTL,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+BHARTIARTL,con,CON_5,Low revenue growth indicates limited business momentum,70
+BHEL,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+BHEL,con,CON_3,Low return on equity suggests weak capital efficiency,70
+BHEL,con,CON_5,Low revenue growth indicates limited business momentum,70
+BOSCHLTD,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BOSCHLTD,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+BPCL,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BPCL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+BPCL,con,CON_5,Low revenue growth indicates limited business momentum,70
+BRITANNIA,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+BRITANNIA,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+CANBK,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+CANBK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+CANBK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+CANBK,con,CON_5,Low revenue growth indicates limited business momentum,70
+CHOLAFIN,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+CHOLAFIN,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+CHOLAFIN,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+CHOLAFIN,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+CIPLA,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+CIPLA,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+COALINDIA,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+COALINDIA,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+COALINDIA,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+COALINDIA,con,CON_5,Low revenue growth indicates limited business momentum,70
+DABUR,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+DABUR,con,CON_5,Low revenue growth indicates limited business momentum,70
+DIVISLAB,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+DIVISLAB,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+DLF,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+DLF,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+DLF,con,CON_3,Low return on equity suggests weak capital efficiency,70
+DLF,con,CON_5,Low revenue growth indicates limited business momentum,70
+DMART,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+DMART,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+DRREDDY,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+DRREDDY,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+DRREDDY,con,CON_5,Low revenue growth indicates limited business momentum,70
+EICHERMOT,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+EICHERMOT,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+EICHERMOT,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+GAIL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+GAIL,con,CON_5,Low revenue growth indicates limited business momentum,70
+GODREJCP,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+GODREJCP,con,CON_3,Low return on equity suggests weak capital efficiency,70
+GRASIM,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+HAL,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+HAL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HAL,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+HAVELLS,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HAVELLS,con,CON_5,Low revenue growth indicates limited business momentum,70
+HCLTECH,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+HCLTECH,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HDFCBANK,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HDFCBANK,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+HDFCBANK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+HDFCBANK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+HDFCBANK,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+HDFCLIFE,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+HDFCLIFE,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+HDFCLIFE,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+HEROMOTOCO,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+HEROMOTOCO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HEROMOTOCO,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+HINDALCO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HINDALCO,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+HINDALCO,con,CON_3,Low return on equity suggests weak capital efficiency,70
+HINDUNILVR,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+HINDUNILVR,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+HINDUNILVR,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ICICIBANK,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ICICIBANK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ICICIBANK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+ICICIBANK,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+ICICIGI,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ICICIGI,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ICICIPRULI,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ICICIPRULI,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+ICICIPRULI,con,CON_3,Low return on equity suggests weak capital efficiency,70
+INDIGO,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+INDIGO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+INDIGO,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+INDIGO,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+INDUSINDBK,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+INDUSINDBK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+INDUSINDBK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+INDUSINDBK,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+INFY,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+INFY,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+IOC,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+IOC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+IOC,con,CON_5,Low revenue growth indicates limited business momentum,70
+IRCTC,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+IRCTC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+IRCTC,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+IRCTC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+IRFC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+IRFC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+IRFC,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+IRFC,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+ITC,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+ITC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ITC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+JINDALSTEL,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+JIOFIN,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+JIOFIN,pro,PRO_3,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90
+JIOFIN,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+JIOFIN,con,CON_3,Low return on equity suggests weak capital efficiency,70
+JSWENERGY,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+JSWENERGY,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+JSWENERGY,con,CON_3,Low return on equity suggests weak capital efficiency,70
+JSWENERGY,con,CON_5,Low revenue growth indicates limited business momentum,70
+JSWSTEEL,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+KOTAKBANK,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+KOTAKBANK,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+KOTAKBANK,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+KOTAKBANK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+KOTAKBANK,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+LICI,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+LICI,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+LICI,pro,PRO_3,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90
+LODHA,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+LODHA,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+LODHA,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+LODHA,con,CON_3,Low return on equity suggests weak capital efficiency,70
+LT,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+LT,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+LTIM,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+LTIM,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+M&M,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+MARUTI,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+MOTHERSON,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+MOTHERSON,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+NAUKRI,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+NAUKRI,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+NAUKRI,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+NAUKRI,con,CON_3,Low return on equity suggests weak capital efficiency,70
+NESTLEIND,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+NESTLEIND,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+NESTLEIND,con,CON_5,Low revenue growth indicates limited business momentum,70
+NHPC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+NHPC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+NHPC,con,CON_5,Low revenue growth indicates limited business momentum,70
+NTPC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+NTPC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+NTPC,con,CON_5,Low revenue growth indicates limited business momentum,70
+ONGC,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+PFC,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+PFC,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+PFC,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+PFC,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+PFC,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+PFC,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+PIDILITIND,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+PIDILITIND,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+PNB,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+PNB,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+PNB,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+PNB,con,CON_5,Low revenue growth indicates limited business momentum,70
+POWERGRID,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+POWERGRID,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+POWERGRID,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+RECLTD,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+RECLTD,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+RECLTD,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+RECLTD,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+RELIANCE,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+RELIANCE,con,CON_3,Low return on equity suggests weak capital efficiency,70
+RELIANCE,con,CON_5,Low revenue growth indicates limited business momentum,70
+SBILIFE,pro,PRO_3,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90
+SBILIFE,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+SBILIFE,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+SBIN,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+SBIN,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+SHREECEM,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+SHREECEM,con,CON_3,Low return on equity suggests weak capital efficiency,70
+SHRIRAMFIN,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+SHRIRAMFIN,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+SHRIRAMFIN,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+SHRIRAMFIN,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+SUNPHARMA,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+SUNPHARMA,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+SUNPHARMA,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+TATACONSUM,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TATACONSUM,con,CON_3,Low return on equity suggests weak capital efficiency,70
+TATACONSUM,con,CON_5,Low revenue growth indicates limited business momentum,70
+TATAMOTORS,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TATAMOTORS,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TATAPOWER,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TATAPOWER,con,CON_5,Low revenue growth indicates limited business momentum,70
+TATASTEEL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TATASTEEL,con,CON_3,Low return on equity suggests weak capital efficiency,70
+TATASTEEL,con,CON_5,Low revenue growth indicates limited business momentum,70
+TCS,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TCS,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TCS,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+TECHM,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TECHM,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+TECHM,con,CON_3,Low return on equity suggests weak capital efficiency,70
+TITAN,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TITAN,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TORNTPHARM,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TORNTPHARM,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TORNTPHARM,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+TRENT,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TRENT,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+TRENT,con,CON_5,Low revenue growth indicates limited business momentum,70
+TVSMOTOR,pro,PRO_1,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,90
+TVSMOTOR,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+TVSMOTOR,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+TVSMOTOR,con,CON_2,Negative free cash flow raises concern about cash generation quality,75
+ULTRACEMCO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+UNIONBANK,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+UNIONBANK,con,CON_1,High debt-to-equity ratio indicates elevated financial leverage risk,85
+UNIONBANK,con,CON_4,Low interest coverage indicates risk in meeting debt obligations,80
+UNITDSPR,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+UNITDSPR,con,CON_5,Low revenue growth indicates limited business momentum,70
+VEDL,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+VEDL,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+WIPRO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ZOMATO,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ZOMATO,pro,PRO_4,Revenue growing above 15% CAGR reflects strong business momentum,85
+ZYDUSLIFE,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+ZYDUSLIFE,pro,PRO_5,High operating margin indicates strong pricing power and cost discipline,80
+SIEMENS,pro,PRO_2,Positive free cash flow indicates healthy cash generation ability,75
+SIEMENS,con,CON_5,Low revenue growth indicates limited business momentum,70
