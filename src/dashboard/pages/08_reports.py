@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 
 from datetime import datetime
 from utils.db import run_query
@@ -49,6 +50,46 @@ selected_company = st.selectbox(
     "Select Company",
     company_list
 )
+
+# ==========================================
+# GENERATE TEARSHEET PDF
+# ==========================================
+
+st.divider()
+
+if st.button("📄 Generate Financial Tearsheet"):
+
+    pdf_path = f"reports/tearsheets/{selected_company}_tearsheet.pdf"
+
+    import subprocess
+
+    subprocess.run(
+        [
+            "python",
+            "src/reports/tearsheet.py"
+        ]
+    )
+
+    if os.path.exists(pdf_path):
+
+        st.success(
+            "Tearsheet generated successfully"
+        )
+
+        with open(pdf_path, "rb") as file:
+
+            st.download_button(
+                label="⬇ Download Tearsheet PDF",
+                data=file,
+                file_name=f"{selected_company}_tearsheet.pdf",
+                mime="application/pdf"
+            )
+
+    else:
+
+        st.error(
+            "PDF generation failed"
+        )
 
 company_info = run_query(
     "SELECT * FROM companies WHERE id=?",
@@ -574,7 +615,7 @@ with tab4:
 
     st.dataframe(
         display_sector,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
