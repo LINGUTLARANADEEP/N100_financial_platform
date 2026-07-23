@@ -1,0 +1,60 @@
+company_id,company_name,cluster_name,return_on_equity_pct,metric,debt_to_equity,revenue_cagr_5yr,free_cash_flow_cr,operating_profit_margin_pct
+ADANIPOWER,Adani Power Ltd,High Quality Compounders,48.27674122146251,return_on_equity_pct,,,,
+BEL,Bharat Electronics Ltd,Turnaround Companies,4744.047619047619,return_on_equity_pct,,,,
+BRITANNIA,Britannia Industries Ltd,High Quality Compounders,54.14869322506978,return_on_equity_pct,,,,
+HAL,Hindustan Aeronautics Ltd,Turnaround Companies,3816.582914572864,return_on_equity_pct,,,,
+INDIGO,Interglobe Aviation Ltd,Emerging Growth,892.568306010929,return_on_equity_pct,,,,
+LICI,Life Insurance Corporation of India,High Quality Compounders,49.44710986501021,return_on_equity_pct,,,,
+LT,Larsen & Toubro Ltd,High Quality Compounders,77.66510140873214,return_on_equity_pct,,,,
+NESTLEIND,Nestle India Ltd,High Quality Compounders,117.75449101796409,return_on_equity_pct,,,,
+PNB,Punjab National Bank,High Quality Compounders,61.320565191187306,return_on_equity_pct,,,,
+TCS,Tata Consultancy Services Ltd,High Quality Compounders,50.944313673485176,return_on_equity_pct,,,,
+ADANIGREEN,Adani Green Energy Ltd,Defensive Dividend Payers,,debt_to_equity,6.595281675818589,,,
+AXISBANK,Axis Bank Ltd,Value Cyclicals,,debt_to_equity,8.249122739980766,,,
+BAJAJFINSV,Bajaj Finserv Ltd,Defensive Dividend Payers,,debt_to_equity,4.789368120938867,,,
+BANKBARODA,Bank of Baroda,Value Cyclicals,,debt_to_equity,12.143718727289434,,,
+CANBK,Canara Bank,Value Cyclicals,,debt_to_equity,14.867419925542425,,,
+CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,Defensive Dividend Payers,,debt_to_equity,6.863420609401317,,,
+HDFCBANK,HDFC Bank Ltd,Value Cyclicals,,debt_to_equity,6.808786667718385,,,
+ICICIBANK,ICICI Bank Ltd,Value Cyclicals,,debt_to_equity,6.445624336310825,,,
+INDUSINDBK,IndusInd Bank Ltd,Value Cyclicals,,debt_to_equity,6.885742949503957,,,
+IRFC,Indian Railway Finance Corporation Ltd,Value Cyclicals,,debt_to_equity,8.378352548852153,,,
+KOTAKBANK,Kotak Mahindra Bank Ltd,Emerging Growth,,debt_to_equity,4.003739266919029,,,
+PFC,Power Finance Corporation Ltd,Defensive Dividend Payers,,debt_to_equity,8.521864217426122,,,
+RECLTD,REC Ltd,Defensive Dividend Payers,,debt_to_equity,6.4249170872386445,,,
+SHRIRAMFIN,Shriram Finance Ltd,High Quality Compounders,,debt_to_equity,3.994034363699512,,,
+ADANIGREEN,Adani Green Energy Ltd,Defensive Dividend Payers,,revenue_cagr_5yr,,59.2,,
+BAJFINANCE,Bajaj Finance Ltd,Defensive Dividend Payers,,revenue_cagr_5yr,,37.37,,
+DMART,Avenue Supermarts Ltd,High Quality Compounders,,revenue_cagr_5yr,,35.09,,
+LODHA,Macrotech Developers Ltd,High Quality Compounders,,revenue_cagr_5yr,,34.81,,
+TECHM,Tech Mahindra Ltd,High Quality Compounders,,revenue_cagr_5yr,,34.96,,
+BAJAJFINSV,Bajaj Finserv Ltd,Defensive Dividend Payers,,free_cash_flow_cr,,,-79634.0,
+BAJFINANCE,Bajaj Finance Ltd,Defensive Dividend Payers,,free_cash_flow_cr,,,-79931.0,
+BHARTIARTL,Bharti Airtel Ltd,High Quality Compounders,,free_cash_flow_cr,,,27809.0,
+BPCL,Bharat Petroleum Corporation Ltd,High Quality Compounders,,free_cash_flow_cr,,,25415.0,
+CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,Defensive Dividend Payers,,free_cash_flow_cr,,,-38538.0,
+GRASIM,Grasim Industries Ltd,High Quality Compounders,,free_cash_flow_cr,,,-33833.0,
+HDFCBANK,HDFC Bank Ltd,Value Cyclicals,,free_cash_flow_cr,,,35669.0,
+INDUSINDBK,IndusInd Bank Ltd,Value Cyclicals,,free_cash_flow_cr,,,-17468.0,
+IOC,Indian Oil Corporation,High Quality Compounders,,free_cash_flow_cr,,,39635.0,
+ONGC,Oil & Natural Gas Corpn Ltd,High Quality Compounders,,free_cash_flow_cr,,,42060.0,
+PFC,Power Finance Corporation Ltd,Defensive Dividend Payers,,free_cash_flow_cr,,,-101229.0,
+PNB,Punjab National Bank,High Quality Compounders,,free_cash_flow_cr,,,-29445.0,
+POWERGRID,Power Grid Corporation of India Ltd,Emerging Growth,,free_cash_flow_cr,,,24176.0,
+RECLTD,REC Ltd,Defensive Dividend Payers,,free_cash_flow_cr,,,-59554.0,
+RELIANCE,Reliance Industries Ltd,High Quality Compounders,,free_cash_flow_cr,,,45207.0,
+SHRIRAMFIN,Shriram Finance Ltd,High Quality Compounders,,free_cash_flow_cr,,,-31359.0,
+TATAMOTORS,Tata Motors Ltd,High Quality Compounders,,free_cash_flow_cr,,,45133.0,
+TCS,Tata Consultancy Services Ltd,High Quality Compounders,,free_cash_flow_cr,,,50429.0,
+ADANIGREEN,Adani Green Energy Ltd,Defensive Dividend Payers,,operating_profit_margin_pct,,,,79.3709327548807
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd,Emerging Growth,,operating_profit_margin_pct,,,,91.7743830787309
+HDFCLIFE,HDFC Life Insurance Company Ltd,Emerging Growth,,operating_profit_margin_pct,,,,99.47675449833469
+HEROMOTOCO,Hero MotoCorp Ltd,Emerging Growth,,operating_profit_margin_pct,,,,86.14676228532112
+HINDALCO,Hindalco Industries Ltd,Emerging Growth,,operating_profit_margin_pct,,,,88.94620349876368
+ICICIGI,ICICI Lombard General Insurance Company Ltd,Emerging Growth,,operating_profit_margin_pct,,,,87.42129155073948
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd,Emerging Growth,,operating_profit_margin_pct,,,,102.02531365231933
+IRFC,Indian Railway Finance Corporation Ltd,Value Cyclicals,,operating_profit_margin_pct,,,,99.50459748545694
+JIOFIN,Jio Financial Services Ltd,Emerging Growth,,operating_profit_margin_pct,,,,84.04312668463612
+KOTAKBANK,Kotak Mahindra Bank Ltd,Emerging Growth,,operating_profit_margin_pct,,,,83.66733645109092
+POWERGRID,Power Grid Corporation of India Ltd,Emerging Growth,,operating_profit_margin_pct,,,,86.87476823070044
+RECLTD,REC Ltd,Defensive Dividend Payers,,operating_profit_margin_pct,,,,100.7702506471368
