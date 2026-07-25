@@ -1,35 +1,55 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath("."))
 
 from src.analytics.cagr import *
 
-print("====== CAGR UNIT TESTS ======\n")
 
-print("Test 1 - Normal CAGR")
-print(calculate_cagr(100, 200, 5))
+def test_normal_cagr():
+    result = calculate_cagr(100, 200, 5)
+    assert result is not None
 
-print("\nTest 2 - Zero Base")
-print(calculate_cagr(0, 200, 5))
 
-print("\nTest 3 - Decline to Loss")
-print(calculate_cagr(100, -50, 5))
+def test_zero_base():
+    result = calculate_cagr(0, 200, 5)
+    assert result[0] is None
+    assert result[1] == "ZERO_BASE"
 
-print("\nTest 4 - Turnaround")
-print(calculate_cagr(-100, 200, 5))
 
-print("\nTest 5 - Both Negative")
-print(calculate_cagr(-100, -200, 5))
+def test_decline_to_loss():
+    result = calculate_cagr(100, -50, 5)
+    assert result[0] is None
+    assert result[1] == "DECLINE_TO_LOSS"
 
-print("\nTest 6 - Insufficient Years")
-print(calculate_cagr(100, 200, 0))
 
-print("\nTest 7 - Revenue CAGR")
-print(revenue_cagr(100, 180, 5))
+def test_turnaround():
+    result = calculate_cagr(-100, 200, 5)
+    assert result[0] is None
+    assert result[1] == "TURNAROUND"
 
-print("\nTest 8 - PAT CAGR")
-print(pat_cagr(50, 120, 5))
 
-print("\nTest 9 - EPS CAGR")
-print(eps_cagr(10, 25, 5))
+def test_both_negative():
+    result = calculate_cagr(-100, -200, 5)
+    assert result[0] is None
+    assert result[1] == "BOTH_NEGATIVE"
+
+def test_insufficient_years():
+    result = calculate_cagr(100, 200, 0)
+    assert result[0] is None
+    assert result[1] == "INSUFFICIENT"
+
+
+def test_revenue_cagr():
+    result = revenue_cagr(100, 180, 5)
+    assert result is not None
+
+
+def test_pat_cagr():
+    result = pat_cagr(50, 120, 5)
+    assert result is not None
+
+
+def test_eps_cagr():
+    result = eps_cagr(10, 25, 5)
+    assert result is not None

@@ -1,25 +1,23 @@
 import sys
 import os
 
-sys.path.append(
-    os.path.abspath(
-        os.path.join(
-            os.path.dirname(__file__),
-            ".."
-        )
-    )
-)
+sys.path.append(os.path.abspath("."))
 
 from src.analytics.cashflow_kpis import *
 
-print("===== CASH FLOW KPI TESTS =====")
 
-print("\nTest 1 - Free Cash Flow")
-fcf = free_cash_flow(1000, -350)
-print(fcf)
+def test_free_cash_flow():
+    result = free_cash_flow(1000, -350)
+    assert result == 650
 
-print("\nTest 2 - CapEx Intensity")
-print(capex_intensity(-350, 5000))
 
-print("\nTest 3 - FCF Conversion")
-print(fcf_conversion(fcf, 800))
+def test_capex_intensity():
+    result = capex_intensity(-350, 5000)
+
+    assert round(result,2) == 7.0
+
+
+def test_fcf_conversion():
+    result = fcf_conversion(650,800)
+
+    assert round(result,2) == 81.25
