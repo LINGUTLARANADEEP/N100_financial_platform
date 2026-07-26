@@ -4,6 +4,7 @@ from api.routes import companies
 from api.routes import clusters
 from api.routes import cluster_summary
 from api.routes import cluster_profile
+from api.routes import cluster_companies
 
 
 app = FastAPI(
@@ -19,18 +20,28 @@ def home():
     }
 
 
+# Company APIs
 app.include_router(
     companies.router
 )
 
+
+# Cluster APIs
 app.include_router(
     clusters.router
 )
+
 
 app.include_router(
     cluster_summary.router
 )
 
+
 app.include_router(
     cluster_profile.router
+)
+
+
+app.include_router(
+    cluster_companies.router
 )

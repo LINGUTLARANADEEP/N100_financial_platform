@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 from api.database import get_connection
 
@@ -16,7 +16,6 @@ def get_companies():
 
     cursor = conn.cursor()
 
-
     cursor.execute(
         """
         SELECT
@@ -28,12 +27,9 @@ def get_companies():
         """
     )
 
-
     rows = cursor.fetchall()
 
-
     conn.close()
-
 
     return [
         {
@@ -43,3 +39,41 @@ def get_companies():
         }
         for row in rows
     ]
+
+
+@router.get("/{company_id}")
+def get_company(company_id:str):
+
+    conn = get_connection()
+
+    cursor = conn.cursor()
+
+
+    cursor.execute(
+        """
+        SELECT *
+        FROM companies
+        WHERE id=?
+        """,
+        (company_id,)
+    )
+
+
+    row = cursor.fetchone()
+
+
+    conn.close()
+
+
+    if row is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Company not found"
+        )
+
+
+    return {
+        "id": row[0],
+        "company_name": row[1],
+        "website": row[2]
+    }
