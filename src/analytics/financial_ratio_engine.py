@@ -34,7 +34,6 @@ df["net_profit_margin_pct"] = (
 )
 
 
-
 # Operating Profit Margin
 
 df["operating_profit_margin_pct"] = (
@@ -44,7 +43,6 @@ df["operating_profit_margin_pct"] = (
     *
     100
 )
-
 
 
 # Equity
@@ -67,9 +65,6 @@ df["return_on_equity_pct"] = (
 )
 
 
-
-# Remove unrealistic ROE
-
 df["return_on_equity_pct"] = (
     df["return_on_equity_pct"]
     .clip(
@@ -79,49 +74,56 @@ df["return_on_equity_pct"] = (
 )
 
 
-
 # Debt Equity
 
 df["debt_to_equity"] = (
     df["borrowings"]
     /
-    equity.replace(0,None)
+    equity.replace(0, None)
 )
-
 
 
 # Interest Coverage
 
 df["interest_coverage"] = (
+
     (
         df["operating_profit"]
         +
         df["other_income"]
     )
-    /
-    df["interest"].replace(0,None)
-)
 
+    /
+
+    df["interest"].replace(0,None)
+
+)
 
 
 # Asset Turnover
 
 df["asset_turnover"] = (
-    df["sales"]
-    /
-    df["total_assets"].replace(0,None)
-)
 
+    df["sales"]
+
+    /
+
+    df["total_assets"].replace(0,None)
+
+)
 
 
 # Free Cash Flow
 
 df["free_cash_flow_cr"] = (
-    df["operating_activity"]
-    +
-    df["investing_activity"]
-)
 
+    df["operating_activity"]
+
+    +
+
+    df["investing_activity"]
+
+)
 
 
 # Capex
@@ -131,11 +133,9 @@ df["capex_cr"] = abs(
 )
 
 
-
 # EPS
 
 df["earnings_per_share"] = df["eps"]
-
 
 
 # Book Value
@@ -145,7 +145,6 @@ df["book_value_per_share"] = (
 )
 
 
-
 # Dividend
 
 df["dividend_payout_ratio_pct"] = (
@@ -153,13 +152,11 @@ df["dividend_payout_ratio_pct"] = (
 )
 
 
-
-# Debt
+# Total Debt
 
 df["total_debt_cr"] = (
     df["borrowings"]
 )
-
 
 
 # CFO
@@ -171,7 +168,7 @@ df["cash_from_operations_cr"] = (
 
 
 # ==============================
-# CAGR Calculation
+# CAGR Columns
 # ==============================
 
 
@@ -180,6 +177,15 @@ df["pat_cagr_5yr"] = None
 df["eps_cagr_5yr"] = None
 
 
+# FLAGS
+
+df["revenue_cagr_5yr_flag"] = None
+df["pat_cagr_5yr_flag"] = None
+df["eps_cagr_5yr_flag"] = None
+
+
+
+# Sort
 
 df = df.sort_values(
     [
@@ -188,6 +194,11 @@ df = df.sort_values(
     ]
 )
 
+
+
+# ==============================
+# CAGR Calculation
+# ==============================
 
 
 for company, group in df.groupby("company_id"):
@@ -210,12 +221,18 @@ for company, group in df.groupby("company_id"):
         )
 
 
+        # --------------------------
         # Revenue CAGR
+        # --------------------------
 
-        revenue_value, _ = revenue_cagr(
+        revenue_value, revenue_flag = revenue_cagr(
+
             group.loc[0,"sales"],
+
             group.loc[5,"sales"],
+
             5
+
         )
 
 
@@ -225,13 +242,25 @@ for company, group in df.groupby("company_id"):
         ] = revenue_value
 
 
+        df.loc[
+            latest_index,
+            "revenue_cagr_5yr_flag"
+        ] = revenue_flag
 
+
+
+        # --------------------------
         # PAT CAGR
+        # --------------------------
 
-        pat_value, _ = revenue_cagr(
+        pat_value, pat_flag = revenue_cagr(
+
             group.loc[0,"net_profit"],
+
             group.loc[5,"net_profit"],
+
             5
+
         )
 
 
@@ -241,13 +270,25 @@ for company, group in df.groupby("company_id"):
         ] = pat_value
 
 
+        df.loc[
+            latest_index,
+            "pat_cagr_5yr_flag"
+        ] = pat_flag
 
+
+
+        # --------------------------
         # EPS CAGR
+        # --------------------------
 
-        eps_value, _ = revenue_cagr(
+        eps_value, eps_flag = revenue_cagr(
+
             group.loc[0,"eps"],
+
             group.loc[5,"eps"],
+
             5
+
         )
 
 
@@ -257,18 +298,26 @@ for company, group in df.groupby("company_id"):
         ] = eps_value
 
 
+        df.loc[
+            latest_index,
+            "eps_cagr_5yr_flag"
+        ] = eps_flag
+
+
 
 # ==============================
-# Keep Latest Company Record
+# Latest Company Record
 # ==============================
 
 
 latest_df = (
+
     df
     .sort_values("year")
     .groupby("company_id")
     .tail(1)
     .copy()
+
 )
 
 
@@ -296,27 +345,30 @@ score_columns = [
 available = [
 
     col
+
     for col in score_columns
+
     if col in latest_df.columns
 
 ]
 
 
-
-# Fill missing values
-
 latest_df[available] = (
+
     latest_df[available]
     .fillna(0)
+
 )
 
 
 
 normalized = (
+
     latest_df[available]
     .rank(
         pct=True
     )
+
 )
 
 
@@ -324,7 +376,9 @@ normalized = (
 latest_df["composite_quality_score"] = (
 
     normalized.mean(axis=1)
+
     *
+
     100
 
 )
@@ -332,26 +386,36 @@ latest_df["composite_quality_score"] = (
 
 
 # ==============================
-# Merge Score Back
+# Merge Score
 # ==============================
 
 
 score_df = latest_df[
+
     [
+
         "company_id",
+
         "composite_quality_score"
+
     ]
+
 ]
 
 
-# remove old column if exists
 
 if "composite_quality_score" in df.columns:
+
     df = df.drop(
+
         columns=[
+
             "composite_quality_score"
+
         ]
+
     )
+
 
 
 df = df.merge(
@@ -366,9 +430,39 @@ df = df.merge(
 
 
 
-# Fill remaining NaN
+# Fill only numeric columns
+numeric_cols = df.select_dtypes(
+    include=["float64","int64"]
+).columns
 
-df = df.fillna(0)
+
+numeric_cols = df.select_dtypes(
+    include=["float64","int64"]
+).columns
+
+
+df[numeric_cols] = (
+    df[numeric_cols]
+    .fillna(0)
+)
+
+
+flag_columns = [
+    "revenue_cagr_5yr_flag",
+    "pat_cagr_5yr_flag",
+    "eps_cagr_5yr_flag"
+]
+
+
+for col in flag_columns:
+    if col in df.columns:
+        df[col] = (
+            df[col]
+            .replace(0, "NOT_CALCULATED")
+        )
+
+
+# Keep text columns unchanged
 
 
 
@@ -387,11 +481,9 @@ df.to_csv(
 
 
 
-print("="*40)
+print("="*50)
 
-print(
-    "Financial Ratios Generated"
-)
+print("Financial Ratio Engine Completed")
 
 print(
     "Rows:",
@@ -404,7 +496,7 @@ print(
 )
 
 print(
-    "Saved : output/financial_ratios.csv"
+    "Saved: output/financial_ratios.csv"
 )
 
-print("="*40)
+print("="*50)
