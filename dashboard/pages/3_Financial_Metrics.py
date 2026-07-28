@@ -17,7 +17,7 @@ st.title("📈 Financial Metrics Analysis")
 try:
 
     response = requests.get(
-        f"{API_URL}/cluster-summary/",
+        f"{API_URL}/financial-metrics/",
         timeout=10
     )
 
@@ -34,36 +34,13 @@ try:
 
 
         # ==================================================
-        # Clean Columns
+        # Remove Duplicate Columns
         # ==================================================
 
         df = df.loc[
             :,
             ~df.columns.duplicated()
         ]
-
-
-        drop_cols = [
-
-            "return_on_equity_pct.l",
-            "debt_to_equity.l",
-            "revenue_cagr_5yr.l",
-            "free_cash_flow_cr.l",
-            "operating_profit_margin_pct.l"
-
-        ]
-
-
-        df.drop(
-
-            columns=[
-                c for c in drop_cols
-                if c in df.columns
-            ],
-
-            inplace=True
-
-        )
 
 
 
@@ -73,12 +50,14 @@ try:
 
         numeric_cols = [
 
-            "return_on_equity_pct",
-            "debt_to_equity",
-            "operating_profit_margin_pct",
-            "revenue_cagr_5yr",
-            "free_cash_flow_cr",
-            "composite_quality_score"
+            "sales",
+            "operating_profit",
+            "opm_percentage",
+            "net_profit",
+            "equity_capital",
+            "borrowings",
+            "total_liabilities",
+            "eps"
 
         ]
 
@@ -88,55 +67,57 @@ try:
             if col in df.columns:
 
                 df[col] = pd.to_numeric(
-
                     df[col],
-
                     errors="coerce"
-
                 )
 
 
 
         # ==================================================
-        # Remove Summary Rows
+        # Calculate Financial Metrics
         # ==================================================
 
-        df = df[
-            ~df.astype(str)
-            .apply(
-                lambda x:
-                x.str.contains(
-                    "mean|median",
-                    case=False
-                ).any(),
+        df["return_on_equity_pct"] = (
 
-                axis=1
-            )
-        ]
+            df["net_profit"] /
+            df["equity_capital"]
+
+        ) * 100
 
 
 
-        # ==================================================
-        # Latest Year Data
-        # ==================================================
+        df["debt_to_equity"] = (
 
-        if "year" in df.columns:
+            df["borrowings"] /
+            df["equity_capital"]
+
+        )
 
 
-            df = (
 
-                df.sort_values("year")
+        df["operating_profit_margin_pct"] = (
 
-                .groupby("company_id")
+            df["operating_profit"] /
+            df["sales"]
 
-                .tail(1)
-
-            )
+        ) * 100
 
 
 
         # ==================================================
-        # Remove Missing Values
+        # Remove Infinite Values
+        # ==================================================
+
+        df.replace(
+            [float("inf"), -float("inf")],
+            0,
+            inplace=True
+        )
+
+
+
+        # ==================================================
+        # Remove Missing Data
         # ==================================================
 
         df.dropna(
@@ -158,18 +139,21 @@ try:
 
 
         # ==================================================
-        # Remove Extreme ROE
+        # Latest Year Data
         # ==================================================
 
-        df = df[
+        if "year" in df.columns:
 
-            (df["return_on_equity_pct"] < 200)
 
-            &
+            df = (
 
-            (df["return_on_equity_pct"] > -100)
+                df.sort_values("year")
 
-        ]
+                .groupby("company_id")
+
+                .tail(1)
+
+            )
 
 
 
@@ -199,33 +183,43 @@ try:
                 )
 
 
-                df = df.merge(
-
-                    companies[
-
-                        [
-                            "id",
-                            "company_name"
-                        ]
-
-                    ],
-
-                    left_on="company_id",
-
-                    right_on="id",
-
-                    how="left"
-
-                )
+                if "company_name" in companies.columns:
 
 
-                df["Company"] = (
+                    df = df.merge(
 
-                    df["company_name"]
+                        companies[
 
-                    .fillna(df["company_id"])
+                            [
 
-                )
+                                "company_name"
+
+                            ]
+
+                        ],
+
+                        left_on="company_id",
+
+                        right_on="company_name",
+
+                        how="left"
+
+                    )
+
+
+                    df["Company"] = (
+
+                        df["company_name"]
+
+                        .fillna(df["company_id"])
+
+                    )
+
+
+                else:
+
+                    df["Company"] = df["company_id"]
+
 
 
             else:
@@ -238,6 +232,7 @@ try:
 
 
             df["Company"] = df["company_id"]
+
 
 
 
@@ -268,7 +263,7 @@ try:
 
         col3.metric(
 
-            "Avg Operating Margin",
+            "Average Operating Margin",
 
             f"{df['operating_profit_margin_pct'].mean():.2f}%"
 
@@ -287,6 +282,7 @@ try:
         st.subheader("📌 Key Insights")
 
 
+
         best_company = df.loc[
 
             df["return_on_equity_pct"].idxmax()
@@ -294,13 +290,16 @@ try:
         ]
 
 
+
         st.success(
 
             f"""
 
-            Highest ROE:
+            🏆 Highest ROE Company:
 
             {best_company['Company']}
+
+            ROE:
 
             {best_company['return_on_equity_pct']:.2f}%
 
@@ -317,11 +316,12 @@ try:
         ]
 
 
+
         st.info(
 
             f"""
 
-            Lowest Debt Company:
+            💰 Lowest Debt Company:
 
             {low_debt['Company']}
 
@@ -335,8 +335,9 @@ try:
 
 
 
+
         # ==================================================
-        # Table
+        # Financial Metrics Table
         # ==================================================
 
         st.subheader(
@@ -350,24 +351,26 @@ try:
 
             "year",
 
+            "sales",
+
+            "net_profit",
+
             "return_on_equity_pct",
 
             "debt_to_equity",
 
             "operating_profit_margin_pct",
 
-            "free_cash_flow_cr",
-
-            "revenue_cagr_5yr"
+            "eps"
 
         ]
 
 
         available_cols = [
 
-            c for c in display_cols
+            col for col in display_cols
 
-            if c in df.columns
+            if col in df.columns
 
         ]
 
@@ -376,9 +379,10 @@ try:
 
             df[available_cols],
 
-            use_container_width=True
+            width="stretch"
 
         )
+
 
 
 
@@ -387,7 +391,9 @@ try:
         # ==================================================
 
         st.subheader(
+
             "Return on Equity Analysis"
+
         )
 
 
@@ -398,6 +404,7 @@ try:
             ascending=True
 
         )
+
 
 
         fig = px.bar(
@@ -428,9 +435,10 @@ try:
 
             fig,
 
-            use_container_width=True
+            width="stretch"
 
         )
+
 
 
 
@@ -445,6 +453,7 @@ try:
         )
 
 
+
         df["roe_size"] = (
 
             df["return_on_equity_pct"]
@@ -452,6 +461,7 @@ try:
             .abs()
 
         )
+
 
 
         fig2 = px.scatter(
@@ -470,7 +480,9 @@ try:
 
                 "return_on_equity_pct",
 
-                "free_cash_flow_cr"
+                "net_profit",
+
+                "sales"
 
             ],
 
@@ -483,7 +495,7 @@ try:
 
             fig2,
 
-            use_container_width=True
+            width="stretch"
 
         )
 
@@ -493,7 +505,9 @@ try:
 
 
         st.error(
+
             "Financial API not responding"
+
         )
 
 

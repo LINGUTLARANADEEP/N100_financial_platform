@@ -6,6 +6,7 @@ from api.routes import cluster_summary
 from api.routes import cluster_profile
 from api.routes import cluster_companies
 from api.routes import screener
+from api.routes import financial_metrics
 
 
 app = FastAPI(
@@ -49,4 +50,8 @@ app.include_router(
 
 app.include_router(
     screener.router
+)
+
+app.include_router(
+    financial_metrics.router
 )
